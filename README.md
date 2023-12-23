@@ -1,13 +1,13 @@
-# Sample Hardhat Project
+# Collection of Solidity Smart Contracts
+=========================================================================
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This repository contains solidity smart contracts for sample applications
+=========================================================================
 
-Try running some of the following tasks:
+# Contents
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+1. Staking Smart Contract
+
+2. Token Vesting Smart Contract
+
+3. Launchpad Smart Contract
