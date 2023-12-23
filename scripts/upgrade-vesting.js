@@ -10,8 +10,8 @@ async function main() {
   const vestingv2 = await upgrades.upgradeProxy(proxyAddress, VestingV2)
   console.log(vestingv2.address," VestingV2 address(should be the same)")
 
-  console.log(await upgrades.erc1967.getImplementationAddress(boxV2.address)," getImplementationAddress")
-  console.log(await upgrades.erc1967.getAdminAddress(boxV2.address), " getAdminAddress")    
+  console.log(await upgrades.erc1967.getImplementationAddress(vestingv2.address)," getImplementationAddress")
+  console.log(await upgrades.erc1967.getAdminAddress(vestingv2.address), " getAdminAddress")    
 }
 
 main().catch((error) => {

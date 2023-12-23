@@ -10,8 +10,8 @@ async function main() {
   const stakingv2 = await upgrades.upgradeProxy(proxyAddress, StakingV2)
   console.log(stakingv2.address," StakingV2 address(should be the same)")
 
-  console.log(await upgrades.erc1967.getImplementationAddress(boxV2.address)," getImplementationAddress")
-  console.log(await upgrades.erc1967.getAdminAddress(boxV2.address), " getAdminAddress")    
+  console.log(await upgrades.erc1967.getImplementationAddress(stakingv2.address)," getImplementationAddress")
+  console.log(await upgrades.erc1967.getAdminAddress(stakingv2.address), " getAdminAddress")    
 }
 
 main().catch((error) => {
